@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Numbers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f4f1e9; /* Soft beige background */
+            margin: 0;
+            font-family: 'Georgia', serif;
+            color: #333333; /* Dark charcoal for text */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 700px;
+            height: 80vh; /* Set a height for the container */
+            padding: 30px;
+            text-align: center;
+            border: none;
+            border-radius: 20px;
+            background-color: #fffaf0; /* Light ivory */
+            position: relative;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(217, 197, 167, 0.15); /* Soft gold accent */
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .box {
+            padding: 20px;
+            border: none;
+            border-radius: 12px;
+            background-color: #d1bfa7; /* Muted gold */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333333;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .box::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 25px;
+            height: 25px;
+            background-color: #c3a283; /* Darker gold */
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            margin-top: 10px;
+            color: #5e5e5e; /* Warm gray for list items */
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #b29472; /* Subtle copper color for links */
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #8a6a4f; /* Darker copper on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><center>Manipulating Numbers</center>
